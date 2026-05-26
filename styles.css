@@ -4,7 +4,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto','JetBrains Mono';
+    font-family:'JetBrains Mono', 'Roboto';
     scroll-behavior: smooth ;
 }
 *::selection{
@@ -49,6 +49,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 2vh;
     margin-right: 6vh;
+    font-weight: 800;
 }
 li a::before{
     content: '';
@@ -103,45 +104,50 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    justify-content: center;
     margin-left: 4vh;
     min-height: 100%;
+    max-width: 50%;
+    text-align: center;
 }
 .para-intro h1{
     color: white;
     font-size: 7vh;
-    align-self: flex-start;
     margin-left: 10px;
 }
 .para-intro span{
     color: #EB5E28;
 }
 .para-intro p{
+    margin-top: 2vh;
     margin-left: 10px;
     color: white;
     font-size: 2vh;
-    max-width: 60%;
-    min-width: 50%;
-    align-self: flex-start;
     display: inline-block;
+    text-align: center;
+}
+.para-intro h2{
+    color: white;
+}
+#int{
+    max-width: 70%;
 }
 .para-intro{
     min-height: 100%;
 }
-.intro{
-    align-self: flex-start;
-    padding: 20px;
+#intro{
+    display: flex;
     max-width: 50%;
     min-width: fit-content;
+    padding: 6vh;
 }
 .icons{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: row;
 }
 .scl-icons{
-    align-self: flex-start;
     margin-top: 25px;
     max-width: 100%;
     min-width: 100%;
@@ -152,13 +158,11 @@ main{
     cursor: pointer;
     transition: all 0.8s ease;
 }
-.personal-icns{
+.icons-cont p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
-    align-self: flex-start;
-    margin-left: 10px;
+    width: 20vh;
 }
 .location, .loc-name{
     display: inline-block;
@@ -176,14 +180,11 @@ main{
     border: none;
     padding: 20px;
     border-radius: 20px;
-    align-self: flex-end;
-    margin-right: auto;
-
+    margin-top: 2vh;
     margin-bottom: 20px;
-    margin-top: 20px;
+    align-self: center;
 }
 .icons-cont{
-    align-self: flex-start;
     display: flex;
     flex-direction: column;
 }
@@ -207,21 +208,13 @@ main{
 #hk-img{
     display: inline-block;
     clip-path: circle(50%);
-
-}
-.image{
-    flex-direction: row;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    min-width: 50%;
+    overflow: hidden;
 }
 #skills{
     height: 100%;
-    width: 100%;
     background-color: black;
+    padding: 6vh;
+    padding-bottom: 0;
 }
 .sk-title{
     display: flex;
@@ -238,7 +231,7 @@ main{
     text-decoration-thickness: 0.8vh;
 }
 .skills-wrapper{
-    padding: 10vh;
+    padding: 15vh;
     height: 70vh;
     width: fit-content;
     display: flex;
@@ -305,4 +298,81 @@ main{
 .javas p{
     color: white;
     max-width: 50%;
+}
+footer{
+    background-color: black;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer h1{
+    color: white;
+}
+footer span{
+    color: #EB5E28;
+}
+#projects{
+    height: fit-content;
+    width: 100%;
+    background-color: black;
+}
+.pro-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pro-title h2{
+    color: white;
+    padding: 1.5vh;
+    font-size: 3vh;
+    margin: 5vh;
+    text-decoration: underline;
+    text-decoration-color: #EB5E28;
+    text-decoration-thickness: 0.8vh;
+}
+.projects-wrapper{
+    text-align: center;
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.project{
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8vh;
+    width: 100%;
+}
+.project h3{
+    padding-top: 7vh;
+    color: white;
+    font-size: 3vh;
+}
+.project p{
+    color: white;
+    font-size: 2vh;
+    max-width: 50%;
+    padding-top: 1vh;
+}
+.project a{
+    text-decoration: none;
+    color: white;
+    background-color: #EB5E28;
+    padding: 2vh;
+    border-radius: 1vh;
+    margin-top: 3vh;
+}
+#p2{
+    max-width: 50%;
+}
+.icon-cont p img{
+    cursor: pointer ;
 }
