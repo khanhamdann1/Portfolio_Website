@@ -369,10 +369,14 @@ footer span{
     padding: 2vh;
     border-radius: 1vh;
     margin-top: 3vh;
+    transition: all 0.8s;
 }
 #p2{
     max-width: 50%;
 }
 .icon-cont p img{
     cursor: pointer ;
+}
+.project a:hover{
+    filter: grayscale(30%) brightness(60%);
 }
